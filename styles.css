@@ -6,9 +6,13 @@
 
 body {
     font-family: 'VT323', monospace;
-    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+    /* background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%); */
+    background-image: url(./bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     min-height: 100vh;
-    color: #00ff41;
+    color: #FFFFFF;
     overflow-x: hidden;
     position: relative;
 }
@@ -37,7 +41,7 @@ body::before {
 header {
     text-align: center;
     margin-bottom: 30px;
-    color: #00ff41;
+    color: #FFFFFF;
     position: relative;
 }
 
@@ -45,37 +49,19 @@ header h1 {
     font-family: 'Press Start 2P', cursive;
     font-size: 2.5rem;
     margin-bottom: 15px;
-    text-shadow: 
-        0 0 10px #00ff41,
-        0 0 20px #00ff41,
-        0 0 30px #00ff41,
-        2px 2px 0px #000;
-    animation: glow 2s ease-in-out infinite alternate;
     letter-spacing: 2px;
-}
-
-@keyframes glow {
-    from {
-        text-shadow: 
-            0 0 10px #00ff41,
-            0 0 20px #00ff41,
-            0 0 30px #00ff41,
-            2px 2px 0px #000;
-    }
-    to {
-        text-shadow: 
-            0 0 15px #00ff41,
-            0 0 25px #00ff41,
-            0 0 35px #00ff41,
-            2px 2px 0px #000;
-    }
+    text-shadow: 
+        0 0 10px #FFFFFF,
+        0 0 20px #FFFFFF,
+        2px 2px 0px #000;
 }
 
 header p {
-    font-size: 1.3rem;
-    opacity: 0.9;
-    text-shadow: 0 0 5px #00ff41;
+    font-size: 1.5rem;
+    opacity: 1;
+    text-shadow: 0 0 5px #FFFFFF;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .main-content {
@@ -88,7 +74,7 @@ header p {
 
 .tools-panel {
     background: linear-gradient(145deg, #1a1a2e, #16213e);
-    border: 3px solid #00ff41;
+    border: 3px solid #FFFFFF;
     border-radius: 15px;
     padding: 25px;
     box-shadow: 
@@ -106,16 +92,16 @@ header p {
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(45deg, #00ff41, #ff00ff, #00ffff, #00ff41);
+    background: linear-gradient(45deg, #FFFFFF, #ff00ff, #00ffff, #FFFFFF);
     border-radius: 17px;
     z-index: -1;
-    animation: borderGlow 3s linear infinite;
+    /* animation: borderGlow 3s linear infinite; */
 }
 
-@keyframes borderGlow {
+/* @keyframes borderGlow {
     0% { filter: hue-rotate(0deg); }
     100% { filter: hue-rotate(360deg); }
-}
+} */
 
 .tool-section, .color-section, .actions-section {
     margin-bottom: 25px;
@@ -123,11 +109,11 @@ header p {
 
 .tool-section h3, .color-section h3, .actions-section h3 {
     margin-bottom: 15px;
-    color: #00ff41;
+    color: #FFFFFF;
     font-family: 'Press Start 2P', cursive;
     font-size: 0.8rem;
-    text-shadow: 0 0 5px #00ff41;
-    border-bottom: 2px solid #00ff41;
+    text-shadow: 0 0 5px #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
     padding-bottom: 8px;
     letter-spacing: 1px;
 }
@@ -140,7 +126,7 @@ header p {
 .tool-btn {
     width: 50px;
     height: 50px;
-    border: 2px solid #00ff41;
+    border: 2px solid #FFFFFF;
     border-radius: 8px;
     background: linear-gradient(145deg, #1a1a2e, #16213e);
     cursor: pointer;
@@ -148,7 +134,7 @@ header p {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #00ff41;
+    color: #FFFFFF;
     box-shadow: 
         0 0 10px rgba(0, 255, 65, 0.3),
         inset 0 0 10px rgba(0, 255, 65, 0.1);
@@ -176,7 +162,7 @@ header p {
 .color-palette {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 4px;
+    gap: 10px;
     margin-bottom: 12px;
 }
 
@@ -194,7 +180,7 @@ header p {
 .color-swatch:hover {
     transform: scale(1.1);
     box-shadow: 0 0 15px rgba(0, 255, 65, 0.5);
-    border-color: #00ff41;
+    border-color: #FFFFFF;
 }
 
 .color-swatch.selected {
@@ -212,16 +198,16 @@ header p {
 }
 
 .custom-color label {
-    font-size: 0.9rem;
-    color: #00ff41;
+    font-size: 1.25rem;
+    color: #FFFFFF;
     font-weight: bold;
-    text-shadow: 0 0 5px #00ff41;
+    text-shadow: 0 0 5px #FFFFFF;
 }
 
 .custom-color input[type="color"] {
     width: 100%;
     height: 40px;
-    border: 2px solid #00ff41;
+    border: 2px solid #FFFFFF;
     border-radius: 8px;
     cursor: pointer;
     background: #1a1a2e;
@@ -232,15 +218,15 @@ header p {
     width: 100%;
     padding: 12px;
     margin-bottom: 10px;
-    border: 2px solid #00ff41;
+    border: 2px solid #FFFFFF;
     border-radius: 8px;
     background: linear-gradient(145deg, #1a1a2e, #16213e);
-    color: #00ff41;
+    color: #FFFFFF;
     font-family: 'Press Start 2P', cursive;
     font-size: 0.7rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    text-shadow: 0 0 5px #00ff41;
+    text-shadow: 0 0 5px #FFFFFF;
     box-shadow: 
         0 0 10px rgba(0, 255, 65, 0.3),
         inset 0 0 10px rgba(0, 255, 65, 0.1);
@@ -263,7 +249,7 @@ header p {
 
 .canvas-container {
     background: linear-gradient(145deg, #1a1a2e, #16213e);
-    border: 3px solid #00ff41;
+    border: 3px solid #FFFFFF;
     border-radius: 15px;
     padding: 25px;
     box-shadow: 
@@ -282,7 +268,7 @@ header p {
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(45deg, #00ff41, #ff00ff, #00ffff, #00ff41);
+    background: linear-gradient(45deg, #FFFFFF, #ff00ff, #00ffff, #FFFFFF);
     border-radius: 17px;
     z-index: -1;
     animation: borderGlow 3s linear infinite;
@@ -290,11 +276,10 @@ header p {
 
 .canvas-wrapper {
     position: relative;
-    margin-bottom: 15px;
 }
 
 #pixel-canvas {
-    border: 3px solid #00ff41;
+    border: 3px solid #FFFFFF;
     border-radius: 10px;
     cursor: crosshair;
     background: white;
@@ -316,7 +301,7 @@ header p {
 .grid-cell {
     width: 16px;
     height: 16px;
-    border: 1px solid rgba(0, 255, 65, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     position: absolute;
     pointer-events: auto;
     cursor: crosshair;
@@ -330,10 +315,10 @@ header p {
 }
 
 .canvas-info {
-    color: #00ff41;
+    color: #FFFFFF;
     font-size: 1rem;
     font-weight: bold;
-    text-shadow: 0 0 5px #00ff41;
+    text-shadow: 0 0 5px #FFFFFF;
     font-family: 'Press Start 2P', cursive;
     letter-spacing: 1px;
 }
@@ -373,6 +358,8 @@ header p {
     header h1 {
         font-size: 1.8rem;
     }
+
+    
 }
 
 @media (max-width: 480px) {

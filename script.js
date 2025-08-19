@@ -54,8 +54,8 @@ class PixelArtGenerator {
     createColorPalette() {
         const palette = document.getElementById('color-palette');
         const colors = [
-            '#000000', '#FFFFFF', '#FF0000', '#00FF00', '#0000FF', '#FFFF00', '#FF00FF', '#00FFFF',
-            '#FFA500', '#800080', '#008000', '#800000', '#000080', '#808080', '#C0C0C0', '#FFC0CB'
+            '#000000', '#5f5750', '#212e53', '#2cabfe', '#82759a', '#c0c1c5', '#fef1e7', '#7d2953',
+            '#ff084e', '#ff76a6', '#a95237', '#ffa109', '#ffcaa8', '#028550', '#00e339', '#feeb2c'
         ];
         
         colors.forEach(color => {
